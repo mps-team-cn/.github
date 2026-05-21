@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 阅读贡献说明
+    url: https://github.com/mps-team-cn/.github/blob/main/CONTRIBUTING.md
+    about: 提交前请先查看贡献方式、内容规范与检查项。
+  - name: 查看安全与边界说明
+    url: https://github.com/mps-team-cn/.github/blob/main/SECURITY.md
+    about: 安全问题、隐私数据、敏感主题与危机边界请优先阅读这里。
+  - name: 主 Wiki 与危机资源
+    url: https://wiki.mpsteam.cn/entries/Crisis-And-Support-Resources/
+    about: 若涉及危机支持、急性风险或医疗诊断，请优先寻求线下专业支持与当地紧急服务。

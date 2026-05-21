@@ -1,0 +1,74 @@
+name: 文档修订
+description: 用于词条错误、内容缺漏、翻译问题、术语不一致
+title: "[Docs] "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎反馈词条错误、内容缺漏、术语不一致、翻译与校对问题。
+
+        请尽量提供具体页面、段落或参考来源，便于核对和修订。
+
+        本项目内容仅供知识整理与参考，不构成医疗建议；如涉及诊断、治疗或危机情况，应寻求持证专业人员或当地紧急服务支持。
+  - type: dropdown
+    id: doc_type
+    attributes:
+      label: 文档问题类型
+      options:
+        - 事实或表述错误
+        - 内容缺漏
+        - 翻译或校对问题
+        - 术语不一致
+        - 链接、标签或格式问题
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: 页面链接或文件路径
+      description: 请填写具体页面、词条或文件位置
+      placeholder: 例如 https://wiki.mpsteam.cn/... 或 docs/...
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: 具体问题
+      description: 请说明哪里有问题，最好能指出段落、标题或字段
+      placeholder: 例如 第三段术语译名与术语表不一致，某处链接已失效
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议修订方式
+      description: 如你已有明确写法、替代表述或结构建议，可直接写出
+      placeholder: 例如 建议统一改为“多意识体系统”，并补充交叉链接到术语表
+  - type: textarea
+    id: references
+    attributes:
+      label: 参考来源或依据
+      description: 如适用，请提供可核对的来源、术语表、内部规范或公开资料
+  - type: dropdown
+    id: sensitive
+    attributes:
+      label: 是否涉及敏感主题
+      options:
+        - 否
+        - 是，涉及临床、创伤、危机或其他敏感内容
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已尽量提供具体位置与可核对信息
+          required: true
+        - label: 我理解文档应保持中立、客观、避免过度推断
+          required: true
+        - label: 我确认未在公开内容中暴露个人隐私或其他敏感数据
+          required: true

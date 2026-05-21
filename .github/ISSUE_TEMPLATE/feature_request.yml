@@ -1,0 +1,72 @@
+name: 功能建议
+description: 用于功能建议、页面体验优化、工具需求
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提出清晰、具体、可执行的改进建议。
+
+        请避免把功能需求写成医疗、心理咨询或危机处置请求；本项目主要提供知识整理、网站维护与开源工具支持。
+  - type: dropdown
+    id: area
+    attributes:
+      label: 建议范围
+      options:
+        - Wiki 页面或站点体验
+        - 内容导航或信息结构
+        - 工具脚本或自动化能力
+        - 组织级协作流程
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你想解决什么问题
+      description: 先说明当前哪里不方便、不清楚或不完整
+      placeholder: 例如 某类词条较难被发现、某个脚本缺少批量处理能力
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 你建议的改进方案
+      description: 请尽量说明预期行为或理想效果
+      placeholder: 例如 增加某个索引页、提供批量导出功能、优化页面导航
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: 使用场景
+      description: 这项改进会帮助谁，在什么场景下使用
+      placeholder: 例如 贡献者校对术语时、读者查找主题入口时、维护者批量处理数据时
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 备选方案或补充说明
+      description: 如有其他实现思路、限制或风险，也可一并说明
+  - type: dropdown
+    id: sensitive
+    attributes:
+      label: 是否涉及敏感主题
+      description: 例如创伤、自伤、临床诊断、危机资源等
+      options:
+        - 否
+        - 是，需要特别留意表述边界
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已检查是否已有相同或相近的建议
+          required: true
+        - label: 我理解建议应保持中立、客观，不夸大项目能力
+          required: true
+        - label: 我确认未在公开内容中提交隐私、病历、密钥或其他敏感数据
+          required: true

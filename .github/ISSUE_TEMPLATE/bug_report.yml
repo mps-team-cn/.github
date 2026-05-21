@@ -1,0 +1,87 @@
+name: Bug 报告
+description: 用于网站显示错误、功能异常、工具脚本问题
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请尽量提供可复现的信息，便于定位问题。
+
+        请不要在公开 Issue 中提交隐私信息、病历资料、账号令牌、服务器密钥或其他敏感数据。
+
+        本项目内容仅供知识整理与参考，不构成医疗建议；如涉及诊断、治疗或危机情况，应寻求持证专业人员或当地紧急服务支持。
+  - type: dropdown
+    id: area
+    attributes:
+      label: 问题范围
+      description: 请选择最接近的问题类型
+      options:
+        - Wiki 网站显示或交互
+        - 组织主页或 GitHub 配置
+        - 工具脚本或自动化功能
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: page_or_path
+    attributes:
+      label: 页面链接或文件路径
+      description: 如适用，请填写出问题的页面、仓库路径或脚本位置
+      placeholder: 例如 https://wiki.mpsteam.cn/... 或 tools/...
+  - type: textarea
+    id: summary
+    attributes:
+      label: 问题描述
+      description: 简要说明发生了什么
+      placeholder: 例如 页面布局错位、按钮无响应、脚本报错、链接跳转异常
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请按顺序描述如何触发该问题
+      placeholder: |
+        1. 打开……
+        2. 点击……
+        3. 看到……
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+      placeholder: 说明你原本预期看到的结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+      placeholder: 说明实际发生的情况，可附错误信息
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 环境信息
+      description: 如适用，请填写浏览器、系统版本、脚本运行环境等
+      placeholder: 例如 Chrome 136 / macOS 15 / Python 3.12
+  - type: textarea
+    id: logs
+    attributes:
+      label: 截图、日志或补充信息
+      description: 可粘贴报错日志、截图说明或其他上下文。提交前请去除敏感信息。
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已检查是否已有相同或相近的问题
+          required: true
+        - label: 我确认未在公开内容中暴露隐私、密钥或其他敏感数据
+          required: true
+        - label: 我理解该项目不提供诊断、治疗或危机干预服务
+          required: true
