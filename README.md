@@ -15,6 +15,7 @@
 
 ## 当前包含
 
+- `https://mpsteam.cn/`：组织主站与对外窗口
 - `profile/README.md`：GitHub 组织主页
 - `.github/ISSUE_TEMPLATE/`：组织级 Issue 模板
 - `.github/PULL_REQUEST_TEMPLATE.md`：组织级 PR 模板
@@ -31,6 +32,7 @@
 
 ## 相关链接
 
+- 主站：https://mpsteam.cn/
 - GitHub 组织：https://github.com/mps-team-cn
 - 主 Wiki：https://wiki.mpsteam.cn/
 - Wiki 仓库：https://github.com/mps-team-cn/Multiple_personality_system_wiki

@@ -24,6 +24,7 @@
 
 ## 主要项目
 
+- [mpsteam.cn](https://mpsteam.cn/)：组织主站与对外信息入口
 - [Multiple_personality_system_wiki](https://github.com/mps-team-cn/Multiple_personality_system_wiki)：多意识体系统主题开放式知识库
 - [Multiple_personality_system_home](https://github.com/mps-team-cn/Multiple_personality_system_home)：主站与组织对外页面相关代码
 - [mps-wiki-starlight](https://github.com/mps-team-cn/mps-wiki-starlight)：Wiki 站点前端与实现相关仓库
@@ -68,6 +69,7 @@
 
 ## 相关链接
 
+- 主站：https://mpsteam.cn/
 - 主 Wiki：https://wiki.mpsteam.cn/
 - GitHub 组织：https://github.com/mps-team-cn
 - Wiki 仓库：https://github.com/mps-team-cn/Multiple_personality_system_wiki
